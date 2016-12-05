@@ -13,7 +13,7 @@
 	var imageWidth;
 	var ctx;
 	// Define our constructor
-	this.Modal = function() {
+	this.Rotate = function() {
 
 		// Define option defaults
 		var defaults = {
