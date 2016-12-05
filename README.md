@@ -10,7 +10,7 @@ i found user css3 to rotate is slow so i write the plugin
 relax , it's very easy!
 
 ```javascript
- var Rotate = new Rotate({
+ var rotate = new Rotate({
     	canvasHeight:500,
     	canvasWidth:300,
     	canvasBgcolor: '#fff',
@@ -20,11 +20,11 @@ relax , it's very easy!
     });
     
     $("#clockwise").click(function(){ 
-        myModal.clockwise();
+        rotate.clockwise();
     });
 
     $("#counterclockwise").click(function(){ 
-        myModal.counterclockwise();
+        rotate.counterclockwise();
     });
 ```
 
