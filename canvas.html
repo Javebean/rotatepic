@@ -17,7 +17,7 @@
     <button id="clockwise">clockwise</button>
     <script type="text/javascript" src="js/roratepic.js"></script>
     <script type="text/javascript">
-    var Rotate = new Rotate({
+    var rotate = new Rotate({
     	canvasHeight:500,
     	canvasWidth:300,
     	canvasBgcolor: '#fff',
@@ -28,11 +28,11 @@
     });
     
     $("#clockwise").click(function(){ 
-        myModal.clockwise();
+    	rotate.clockwise();
     });
 
     $("#counterclockwise").click(function(){ 
-        myModal.counterclockwise();
+    	rotate.counterclockwise();
     });
     </script>
     

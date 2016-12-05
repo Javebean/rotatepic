@@ -83,12 +83,12 @@
 
 	// Public Methods
 	var angleInDegrees = 0;
-	Modal.prototype.clockwise = function() {
+	Rotate.prototype.clockwise = function() {
 		angleInDegrees += 90;
 		drawRotated(angleInDegrees);
 	}
 
-	Modal.prototype.counterclockwise = function() {
+	Rotate.prototype.counterclockwise = function() {
 		angleInDegrees -= 90;
 		drawRotated(angleInDegrees);
 	}
@@ -119,13 +119,13 @@
 
 	// 缩放图片进入cvs
 	var scalePicture = function(img_h, img_w, deg) {
-		 console.log("deg:"+deg);
+		// console.log("deg:"+deg);
 
 		var img_scale = img_h / img_w;
 		if (deg == 90 || deg == 270 || deg == -90 || deg == -270) {
 			img_scale = img_w / img_h;
 		}
-		 console.log(img_scale > canvasScale);
+		// console.log(img_scale > canvasScale);
 
 		if (img_scale > canvasScale) {
 			// 重新计算图片的按比例缩放进canvas的尺寸

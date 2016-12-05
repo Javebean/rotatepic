@@ -10,7 +10,7 @@ i found user css3 to rotate is slow so i write the plugin
 relax , it's very easy!
 
 ```javascript
- var myModal = new Modal({
+ var Rotate = new Rotate({
     	canvasHeight:500,
     	canvasWidth:300,
     	canvasBgcolor: '#fff',
