@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<style>
+    body{ background-color: ivory; }
+    
+</style>
+
+</head>
+
+<body>
+    <!-- <canvas id="canvas" style="width:300px;height: 500px;"></canvas><br> -->
+    <canvas id="canvas"></canvas><br>
+    <button id="counterclockwise">counterclockwise</button>
+    <button id="clockwise">clockwise</button>
+    <script type="text/javascript" src="js/roratepic.js"></script>
+    <script type="text/javascript">
+    var myModal = new Modal({
+    	canvasHeight:500,
+    	canvasWidth:300,
+    	canvasBgcolor: '#fff',
+    	canvasBorderWidth: '1px',
+    	canvasBorderColor: 'red',
+    /* 	imageSrc:'pic/phone.jpg' */
+    	imageSrc:'pic/hah.png'
+    });
+    
+    $("#clockwise").click(function(){ 
+        myModal.clockwise();
+    });
+
+    $("#counterclockwise").click(function(){ 
+        myModal.counterclockwise();
+    });
+    </script>
+    
+</body>
+</html>
